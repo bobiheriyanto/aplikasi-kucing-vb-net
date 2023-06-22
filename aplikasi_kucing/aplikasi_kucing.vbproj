@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8936319C-4BCD-41F5-A1C5-388E71798D05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>aplikasi_kucing.My.MyApplication</StartupObject>
+    <RootNamespace>aplikasi_kucing</RootNamespace>
+    <AssemblyName>aplikasi_kucing</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>aplikasi_kucing.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>aplikasi_kucing.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>99319072488A056026C6DA7BAC73CACB64F68A1C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>aplikasi_kucing_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="mysql.data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\BAHAN AJAR UMIKA\BASIS DATA\mysql-connector-net-6.6.4-noinstall\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="dbkucingDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbkucingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="input\databooking.Designer.vb">
+      <DependentUpon>databooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="input\databooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="input\datakucing.Designer.vb">
+      <DependentUpon>datakucing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="input\datakucing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="input\datapenitipan.Designer.vb">
+      <DependentUpon>datapenitipan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="input\datapenitipan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="input\login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="input\login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="input\menupimpinan.Designer.vb">
+      <DependentUpon>menupimpinan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="input\menupimpinan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="input\menuutama.Designer.vb">
+      <DependentUpon>menuutama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="input\menuutama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="input\splash.Designer.vb">
+      <DependentUpon>splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="input\splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="input\splash2.Designer.vb">
+      <DependentUpon>splash2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="input\splash2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="koneksi\koneksi.vb" />
+    <Compile Include="laporan\laporanbooking.Designer.vb">
+      <DependentUpon>laporanbooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan\laporanbooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan\laporanbookingbln.Designer.vb">
+      <DependentUpon>laporanbookingbln.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan\laporanbookingbln.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan\laporanbookingthn.Designer.vb">
+      <DependentUpon>laporanbookingthn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan\laporanbookingthn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan\laporankucing.Designer.vb">
+      <DependentUpon>laporankucing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan\laporankucing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan\laporanpenitipan.Designer.vb">
+      <DependentUpon>laporanpenitipan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan\laporanpenitipan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan\laporanpenitipanbln.Designer.vb">
+      <DependentUpon>laporanpenitipanbln.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan\laporanpenitipanbln.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan\laporanpenitipanthn.Designer.vb">
+      <DependentUpon>laporanpenitipanthn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan\laporanpenitipanthn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan\lappenitipanthn.vb">
+      <DependentUpon>lappenitipanthn.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="laporan\lappenitipanbln.vb">
+      <DependentUpon>lappenitipanbln.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="laporan\lapbookingthn.vb">
+      <DependentUpon>lapbookingthn.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="laporan\lapbookingbln.vb">
+      <DependentUpon>lapbookingbln.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="laporan\lapbooking.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lapbooking.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="laporan\lapkucing.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lapkucing.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="laporan\lappenitipan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lappenitipan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="input\databooking.resx">
+      <DependentUpon>databooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="input\datakucing.resx">
+      <DependentUpon>datakucing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="input\datapenitipan.resx">
+      <DependentUpon>datapenitipan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="input\login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="input\menupimpinan.resx">
+      <DependentUpon>menupimpinan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="input\menuutama.resx">
+      <DependentUpon>menuutama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="input\splash.resx">
+      <DependentUpon>splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="input\splash2.resx">
+      <DependentUpon>splash2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan\laporanbooking.resx">
+      <DependentUpon>laporanbooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan\laporanbookingbln.resx">
+      <DependentUpon>laporanbookingbln.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan\laporanbookingthn.resx">
+      <DependentUpon>laporanbookingthn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan\laporankucing.resx">
+      <DependentUpon>laporankucing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan\laporanpenitipan.resx">
+      <DependentUpon>laporanpenitipan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan\laporanpenitipanbln.resx">
+      <DependentUpon>laporanpenitipanbln.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan\laporanpenitipanthn.resx">
+      <DependentUpon>laporanpenitipanthn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan\lappenitipanthn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>lappenitipanthn.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan\lappenitipanbln.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>lappenitipanbln.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan\lapbookingthn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>lapbookingthn.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan\lapbookingbln.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>lapbookingbln.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan\lapbooking.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>lapbooking.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan\lapkucing.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>lapkucing.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan\lappenitipan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>lappenitipan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="aplikasi_kucing_TemporaryKey.pfx" />
+    <None Include="App.config" />
+    <None Include="dbkucingDataSet.xsc">
+      <DependentUpon>dbkucingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbkucingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbkucingDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbkucingDataSet.xss">
+      <DependentUpon>dbkucingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logi.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asas.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lgi.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atlas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buzz_mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormatFactoryFormatFactoryFormatFactoryMaps_mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormatFactoryFormatFactoryTag reader_mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer-blue_37120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BNB.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
